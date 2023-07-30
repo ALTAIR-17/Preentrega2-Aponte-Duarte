@@ -39,10 +39,13 @@ body {
   .section-1{
     text-align: center;
   }
-  .logo{
-    height: 50px;
-    width: 50px;
+  .logo {
+    text-align: center;
   }
+  /*.logo{
+    height: 30px;
+    width: 30px;
+  }*/
   .sub-title{
     display: inline-block;
     border: solid #fcfafa;
@@ -90,7 +93,6 @@ body {
     font-family: "Roboto";
   }
   footer {
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
