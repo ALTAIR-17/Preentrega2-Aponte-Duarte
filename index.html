@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="./asset/image/tortita.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300&display=swap"rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -14,10 +17,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="container-fluid bg-pink py-3">
+    <header class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-4">
-        </div>
+        <div class="col-4"></div>
         <div class="col-4">
           <h1 class="welcome-title">Bienvenido a Elizabeth´s Cake Shop</h1>
         </div>
@@ -36,39 +38,45 @@
       </div>
     </header>
     <nav class="menu">
-      <ul>
+      <div></div>
+      <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="pages/pasteles.html">Pasteles</a></li>
         <li><a href="pages/recetas.html">Recetas</a></li>
-        <li><a href="pages/sobre_nosotros.html">Sobre nosotros</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
+        <li><a href="pages/sobre_nosotros.html">Nosotros</a></li>
       </ul>
+      <a class="btn" href="pages/contacto.html"><button>Contacto</button></a>
     </nav>
     <br>
     <br>
     <br>
+    <br>
+    <div class="sub-title">
+      <h1>¡Disfruta de los pasteles más deliciosos hechos con amor!</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="section-1 container-fluid col-6">
+      <img src="./asset/image/pasteles/16.jpeg" class="img-fluid" alt="pastel-16">
+      <img src="./asset/image/pasteles/azul.jpeg" class="img-fluid" alt="pastel-azul">
+      <img src="./asset/image/pasteles/i-love.jpeg" class="img-fluid" alt="pastel-i-love">
+      <img src="./asset/image/pasteles/barbie 1.jpeg" class="img-fluid" alt="pastel-barbie">
+      <img src="./asset/image/pasteles/proyecto.jpeg" class="img-fluid" alt="pastel-proyecto"> 
+      <!-- <h1 class="welcome-title">Bienvenido a Elizabeth´s Cake Shop</h1> -->
+    </section>
+    <br>
+    <br>
     <main>
-      <div class="logo">
+      <!-- <div class="logo">
         <img src="./asset/image/logo.png"width="270"height="270"alt="logo" />
-      </div>
-      <section class="section-1">
-        <br>
-        <br>
-        <br>
-        <h1 class="welcome-title">Bienvenido a Elizabeth´s Cake Shop</h1>
-        <br>
-        <br>
-        <section>
-          <p class="sub-title">¡Disfruta de los pasteles más deliciosos hechos con amor y los mejores ingredientes!</p>
-        </section>
-        <br>
-        <br>
-      </section>
+      </div> -->   
       <br>
       <br>
-      <section class="section-1">
-          <p class="sub-title">Productos Artesanales</p>
-      </section>
+      <div class="sub-title">
+        <h1>Productos Artesanales</h1>
+      </div>  
       <br>
       <br>
       <section class="video">
@@ -97,19 +105,20 @@
     </main>
     <footer>
       <div>
-        <nav class="footer-menu">
+        <nav class="menu">
         <!--<a href="#head"><img src="./asset/image/logo.png" alt="Volver a Inicio" class="goUp"></a>-->
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pages/pasteles.html">Pasteles</a></li>
-            <li><a href="pages/recetas.html">Recetas</a></li>
-            <li><a href="pages/sobre_nosotros.html">Sobre nosotros</a></li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-            <div>
-              <h2>Derechos de autor &copy; 2023 Eizabeth´s Cake Shop</h2>
-            </div>
-          </ul>
+        <div></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/pasteles.html">Pasteles</a></li>
+          <li><a href="pages/recetas.html">Recetas</a></li>
+          <li><a href="pages/sobre_nosotros.html">Nosotros</a></li>
+        </ul>
+        <a class="btn" href="pages/contacto.html"><button>Contacto</button></a>  
         </nav>
+        <div>
+          <h2 class="footer-text">Derechos de autor &copy; 2023 Eizabeth´s Cake Shop</h2>
+        </div>
       </div>
     </footer>
   </body>
