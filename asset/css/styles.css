@@ -7,6 +7,7 @@
 
 /* Estilos globales */
 html {
+  height: 100%;
   font-size: 16px;
 
   @media screen and (max-width: 540px) {
@@ -15,6 +16,9 @@ html {
 }
   
   body {
+    /* display: flex;
+    flex-direction: column;
+    min-height: 100%; */
     background-image: url("../image/marco-ingredientes-alimentarios.jpg");
     background-size: cover;
     min-height: 100vh;
@@ -190,7 +194,7 @@ nav ul li a {
   font-family: "Roboto"
 }
 footer {
-  position: absolute;
+  margin-top: auto;
   bottom: 0;
   width: 100%;
   background-color: #fc95c8;
@@ -222,5 +226,20 @@ div p{
 }
 .imagen-de-fondo {
   max-width: 100%;
+}
+.galeria img {
+  transition: .3s;
+  border-radius:  8px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 30px #000;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+  gap: 32px;
+}
+.galeria img:hover{
+  transform: scale(0.9);
 }
   
