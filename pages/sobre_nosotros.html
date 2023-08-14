@@ -6,6 +6,7 @@
   <title>Elizabeth´s Cake Shop</title>
   <link rel="stylesheet" href="../asset/css/styles.css" />
   <link rel="shortcut icon" href="../asset/image/tortita.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,20 +30,25 @@
   </header>
   <nav class="menu container-fluid">
     <div col-4></div>
-    <ul class="nav-links col-4">
-      <li><a href="/index.html">Inicio</a></li>
-      <li><a href="/pages/pasteles.html">Pasteles</a></li>
-      <li><a href="/pages/recetas.html">Recetas</a></li>
+    <ul col-4 class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="./pasteles.html">Pasteles</a></li>
+      <li><a href="./recetas.html">Recetas</a></li>
       <li class="btn-menu">Nosotros</li>
     </ul>
-    <a class="btn" col-4 href="/pages/contacto.html"><button>Contacto</button></a>
+    <a class="btn" col-4 href="./contacto.html"><button>Contacto</button></a>
   </nav>
   <main>
     <section class="pasteles">
       <h2 class="welcome-title">Sobre nosotros</h2>
       <br>
       <br>
-      <p class="sub-title">Somos un equipo apasionado por la repostería y nos encanta compartir nuestra pasión por los pasteles con todos nuestros clientes.</p>
+      <div class="text">
+        <p class="sub-title">
+          ¿Estás buscando una pieza única para tu evento especial? Nuestro equipo está listo para colaborar contigo en la creación de un pastel personalizado que refleje tu estilo y visión. Desde la conceptualización hasta la entrega final, nos comprometemos a hacer realidad tus sueños azucarados.
+          Únete a nosotros en este viaje culinario donde la tradición se encuentra con la creatividad, y donde cada corte de pastel es más que una simple degustación, es una experiencia artística y gastronómica que deleitará tus sentidos y te dejará deseando más. ¡Bienvenido a nuestra familia de pasteles artesanales!  
+        </p>
+      </div>
       <br>
       <br>
       <img src="../asset/image/equipo.jpg" alt="Nuestro equipo">
@@ -52,22 +58,34 @@
   <br>
   <br>
   <footer>
-    <div>
-      <nav class="menu container-fluid">
-      <!--<a href="#head"><img src="./asset/image/logo.png" alt="Volver a Inicio" class="goUp"></a>-->
-      <div col-4></div>
-      <ul col-4 class="nav-links">
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/pages/pasteles.html">Pasteles</a></li>
-        <li><a href="/pages/recetas.html">Recetas</a></li>
-        <li class="btn-menu">Nosotros</li>
-      </ul>
-      <a class="btn" col-4 href="pages/contacto.html"><button>Contacto</button></a>  
-      </nav>
+    <div>  
       <div>
-        <h2 class="footer-text">Derechos de autor &copy; 2023 Eizabeth´s Cake Shop</h2>
+        <nav class="menu container-fluid">
+          <!--<a href="#head"><img src="./asset/image/logo.png" alt="Volver a Inicio" class="goUp"></a>-->
+          <div col-4></div>
+          <ul col-4 class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./pasteles.html">Pasteles</a></li>
+            <li><a href="./recetas.html">Recetas</a></li>
+            <li class="btn-menu">Nosotros</li>
+          </ul>
+          <div col-4></div>
+        </nav>
       </div>
-    </div>
+      <div class="f-container">
+        <div class="banner-tarjetas">
+          <img src="../asset/image/mercadopago-banner.png" alt="banner tarjetas de pago">
+        </div>
+        <div class="footer-links">
+          <h4>Siguenos</h4>
+          <section class="social-links">
+            <a href="#"><i class="fab fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fab fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fab fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fab fab fa-tiktok"></i></a>
+          </section>
+        </div>  
+    <div>
   </footer>
 </body>
 </html>
