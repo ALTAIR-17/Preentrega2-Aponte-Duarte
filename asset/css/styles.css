@@ -16,9 +16,9 @@ html {
 }
   
   body {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    min-height: 100%; */
+    min-height: 100%;
     background-image: url("../image/marco-ingredientes-alimentarios.jpg");
     background-size: cover;
     min-height: 100vh;
@@ -81,13 +81,14 @@ html {
   }
   .menu .nav-links li{
     display: inline-block;
-    padding: 0 20px;
+    padding: 0px 20px;
+    margin-inline: 10px;
   }
   .menu .nav-links li:hover{
     transform: scale(1.1);
     }
   .menu .nav-links a{
-      font-size: 600;
+      font-size: 500;
       color: #eceff1;
       text-decoration: none;    
   }
@@ -98,6 +99,14 @@ html {
     font-weight: 700;
     color: #f78da7;
     padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  .btn-menu{
+    color: #f78da7;
     background: #eceff1;
     border: none;
     border-radius: 50px;
@@ -140,106 +149,104 @@ html {
     text-align: center;
   } */
   .head-logo{
-    height: 40px;
-    width: 40px;
+    height: 50px;
   }
-.sub-title{
-  font-size: 2rem;
-  text-align: center;
-  font-family: 'Dancing Script', cursive;
-  color: #da6980;
+  .sub-title{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: #da6980;
 
-}
-h1{
-  display:inline-block;
-  position:relative;
-}
-h1::after,h1::before{
-  content: '';
-  position:absolute;
-  width:110px;
-  height:3px;
-  background-color: currentColor;
-  top: 0.6em;
-}
-h1::before{
-  left: -120px;
-}
-h1::after{
-  right: -120px;
-}
+  }
+  h1{
+    display:inline-block;
+    position:relative;
+  }
+  h1::after,h1::before{
+    content: '';
+    position:absolute;
+    width:110px;
+    height:3px;
+    background-color: currentColor;
+    top: 0.6em;
+  }
+  h1::before{
+    left: -120px;
+  }
+  h1::after{
+    right: -120px;
+  }
 
-nav {
-  padding: 10px;
-}
-nav ul li {
-  list-style-type: none;
-  display: inline;
-  margin-right: 10px;
-  width: 20%;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-  
-  /*.goUp{
-    height: 8vh;
-    width: 4vw;
-    bottom: 10px;
-    position: fixed;
-    left: 10px;
-  }*/
-.footer-menu{
-  font-family: "Roboto"
-}
-footer {
-  margin-top: auto;
-  bottom: 0;
-  width: 100%;
-  background-color: #fc95c8;
-}
-footer h2 {
-  width: auto;
-  font-family: "Roboto";
-  color: #ffffff;
-  font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: right;
-}
-/* .footer-text {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-} */
-.pasteles{
-  text-align: center;
-}
-  
-div p{
-  padding: 10px;
-  border: solid #f78da7;
-  border-radius: 10px;
-  width: 30%;
-  height: 20%;
-  margin-left: 35%;
-}
-.imagen-de-fondo {
-  max-width: 100%;
-}
-.galeria img {
-  transition: .3s;
-  border-radius:  8px;
-  width: 100%;
-  height: auto;
-  box-shadow: 0px 0px 30px #000;
-}
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
-  gap: 32px;
-}
-.galeria img:hover{
-  transform: scale(0.9);
-}
-  
+  nav {
+    padding: 10px;
+  }
+  nav ul li {
+    list-style-type: none;
+    margin-right: 20px;
+    width: 20%;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+    
+    /*.goUp{
+      height: 8vh;
+      width: 4vw;
+      bottom: 10px;
+      position: fixed;
+      left: 10px;
+    }*/
+  .footer-menu{
+    font-family: "Roboto"
+  }
+  footer {
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: #fc95c8;
+  }
+  footer h2 {
+    width: auto;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: right;
+  }
+  /* .footer-text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  } */
+  .pasteles{
+    text-align: center;
+  }
+    
+  div p{
+    padding: 10px;
+    border: solid #f78da7;
+    border-radius: 10px;
+    width: 30%;
+    height: 20%;
+    margin-left: 35%;
+  }
+  .imagen-de-fondo {
+    max-width: 100%;
+  }
+  .galeria img {
+    transition: .3s;
+    border-radius:  8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 30px #000;
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    gap: 32px;
+  }
+  .galeria img:hover{
+    transform: scale(0.9);
+  }
+    
