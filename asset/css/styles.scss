@@ -13,84 +13,100 @@ font-size: 16px;
 }
 
 
-body {
+.menu-1{
+  background-color: #fc95c8;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 2rem;
+}
+.logo-header img{
+  width: 50px;
+}
+.nav-menu ul{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.nav-menu li{
+  margin-right: 1rem;
+  font-size: 18px;
+  border-radius: 3px;
+  
+}
+.nav-menu a{
+  color: #fff;
+}
+.nav-menu li:last-child{
+  background:#00c3ff;
+  padding: .25rem .75rem;
+  border-radius: .2rem;
+}
+.menu-icon img{
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+}
+.menu-icon, #check{
+  display: none;
+}
+
+body {
   min-height: 100%;
-  background-image: url("../image/marco-ingredientes-alimentarios.jpg");
+  background-image: url("../image/bgr.jpg");
   background-size: cover;
   min-height: 100vh;
   position: relative;
 }
 header{
   background-color: #ea81b5;
+  display: flex;
+  justify-content: center;
 }
+
 .welcome-title{
   color: #fcfafa;
   font-family: 'Dancing Script', cursive;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 3em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 10px;
 }
-.cuenta{
-  text-align: right;
-  font-size: smaller;
-}
-.cuenta ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.cuenta ul li {
-  display: inline-block;
-  margin-left: 20px;
-}
-.cuenta ul li:first-child {
-  margin-left: 0;
-}
+
 .menu{
   background-color: #fc95c8;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 85px;
+  width: 100%;
+  height: 80px;
   padding: 5px 10%;
   flex-wrap: wrap;
   margin-bottom: 1rem;
   font-family: "Roboto";
 }
-/* .menu .logo{
-  cursor: pointer;
-}
-.menu .logo img{
-  height: 70px;
-  width: auto;
-  transition: all 0.3s;
-}
-.menu .logo img:hover{
-  transform: scale(1.2);
-} */
+
 .menu .nav-links{
   list-style: none;
-}
-.menu .nav-links li{
-  display: inline-block;
-  padding: 0px 20px;
-  margin-inline: 10px;
-}
-.menu .nav-links li:hover{
-  transform: scale(1.1);
+  li{
+    display: inline-block;
+    padding: 0px 20px;
+    margin-inline: 10px;
   }
-.menu .nav-links a{
-    font-size: 500;
-    color: #eceff1;
-    text-decoration: none;    
-}
-.menu .nav-links li a:hover{
-  color: #ffa9ba;
-}
+  li:hover{
+    transform: scale(1.1);
+    }
+    a{
+      font-size: 500;
+      color: #eceff1;
+      text-decoration: none;    
+  }
+  li a:hover{
+    color: #ffa9ba;
+  }
+} 
 .menu .btn button{
   font-weight: 700;
   color: #f78da7;
@@ -138,21 +154,35 @@ section img:hover {
 }
 
 .sub-title{
-  font-size: 2rem;
+  font-size: clamp(2em, 5vw, 5em);
   font-family: 'Dancing Script', cursive;
   color: #da6980;
   display: flex;
   justify-content: center;
+  max-width: 700px;
+  margin-top: 150px;
+  margin: 0 auto;
+  padding: 45px 20px;
+  width: 100%;
+  min-height: 250px;
 }
 .text {
+  font-family: 'Dancing Script', cursive;
   display: grid;
   place-items: center;
+  
+}
+p{
+  font-size: 2em;
 }
 div p{
-  padding: 10px;
+  max-width: 700px;
+  margin-top: 150px;
+  margin: 0 auto;
+  padding: 45px 20px;
   border: solid #ffffff;
   border-radius: 10px;
-  width: 60%;
+  width: 100%;
   min-height: 250px;
 }
 h1{
@@ -187,13 +217,6 @@ nav ul li a {
   text-decoration: none;
 }
   
-  /*.goUp{
-    height: 8vh;
-    width: 4vw;
-    bottom: 10px;
-    position: fixed;
-    left: 10px;
-  }*/
 .footer-menu{
   display: flex;
   justify-content: center;
@@ -207,19 +230,15 @@ footer {
   margin-top: auto;
   bottom: 0;
   background-color: #fc95c8;
+  h2 {
+    width: auto;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
 }
-footer h2 {
-  width: auto;
-  font-family: "Roboto";
-  color: #ffffff;
-  font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-/*.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-}*/
 .footer-links {
   width: 25%;
   text-align: center;
@@ -289,6 +308,29 @@ footer h2 {
 .galeria img:hover{
   transform: scale(0.9);
 }
+.card-img-top{
+  border-radius: 50px;
+  padding: 20px;
+}
+.card{
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+  padding: 25px;
+  margin-top: -15px;
+}
+.btn-primary{
+  border-radius: 50px;
+  width: 120px;
+}
+.btn-primary:hover{
+  background-color: black;
+  border: none;
+}
+h3,h5{
+  color: rgb(0, 91, 228);
+}
 @media (max-width: 800px) {
  .menu{ flex-direction: column;
  }
@@ -300,5 +342,40 @@ footer h2 {
   src: url("../font/Olivia.ttf");
 }
 }
-
+@media (max-width:768px){
+  .checkbtn{
+      display: block;
+  }
+  .menu-icon{
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+  }
+  .nav-menu ul{
+      display: block;
+      position: fixed;
+      top:70px;
+      left:-100%;
+      background: #ffa9ba;
+      width: 100%;
+      height: 100vh;
+      right: 0;
+  }
+  .nav-menu ul li{
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+  }
+  .nav-menu ul li:last-child{
+      background: none;
+      padding: 1rem;
+  }
+  #check:checked ~ ul{
+      left: 0;
+      transition: all .25s;
+  }
+}
   

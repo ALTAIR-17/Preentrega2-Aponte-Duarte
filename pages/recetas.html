@@ -2,72 +2,139 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
   <title>Elizabeth´s Cake Shop</title>
   <link rel="stylesheet" href="../asset/css/styles.css" />
-  <link rel="shortcut icon" href="../asset/image/tortita.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./asset/image/tortita.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300&display=swap"rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300&display=swap"rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col-4"></div>
-      <div class="col-4">
+  <header>
+    <div>
+      <div></div>
+      <div>
         <h1 class="welcome-title">Bienvenido a Elizabeth´s Cake Shop</h1>
       </div>
-      <div class="col-4 text-right"></div>
+      <div></div>
     </div>
   </header>
-  <nav class="menu container-fluid">
-    <div col-4></div>
-    <ul col-4 class="nav-links">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="./pasteles.html">Pasteles</a></li>
-      <li class="btn-menu">Recetas</li>
-      <li><a href="./sobre_nosotros.html">Nosotros</a></li>
-    </ul>
-    <a col-4 class="btn" href="./contacto.html"><button>Contacto</button></a>
-  </nav>
+  <div class="menu-1">
+    <div class="logo-header">
+          <a href=""><img src="../asset/image/logo.png" alt=""></a>
+    </div>
+      <div class="nav-menu">
+        <input type="checkbox" id="check">    
+        <label for="check" class="checkbtn">
+          <i class="menu-icon"><img src="../asset/image/bars-solid (1).svg" alt=""></i>
+        </label>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./pasteles.html">Pasteles</a></li>
+          <li><a href="./recetas.html">Recetas</a></li>
+          <li><a href="./sobre_nosotros.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>   
+      </div>
+  </div>
   <main>
     <section class="pasteles">
-      <h2 class="welcome-title">Nuestras recetas</h2>
-      <br>
-      <br>
-      <article>
-        <h3 class="sub-title">Pastel de zanahoria</h3>
-        <br>
-        <br>
-        <img src="../asset/image/pastel de zanahoria.jpg" alt="Pastel de zanahoria">
-        <br>
-        <br>
-      <div class="text">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit voluptas nemo, provident corrupti modi a dolor quod quae voluptatem dolorem in consequuntur, consequatur cum minus voluptates voluptate inventore nihil ratione!lorem</p>
-      </div>
-      </article>
-      <br>
-      <br>
-      <article>
-        <h3 class="sub-title">Pastel de limón</h3>
-        <br>
-        <br>
-        <img src="../asset/image/tarta-de-limon.jpg" alt="Pastel de limón">
-        <br>
-        <br>
-      <div class="text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ducimus quam asperiores molestiae facilis ipsam eos perferendis? Repellat, deleniti voluptate molestiae molestias autem unde vero commodi odit nam saepe facilis?lorem</p>
-      </div>
-      </article>
+      <h1 class="welcome-title">Nuestras recetas</h1>
     </section>
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+          <div class="col">
+              <div class="card">
+                  <img src="../asset/image/tarta de queso.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Tarta de queso</h5>
+                      <p class="card-text">Ingredientes: 1 tarrina de queso philadelphia, 2 brick de 250 ml de nata, 6 cucharadas de azucar, 1 sobre de gelatina de limón, 1 paquete de galletas maría, 150 gramos de mantequilla, mermeladas de fresa o del sabor que más os guste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                      <h3>2500$</h3>
+                      <button class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card">
+                  <img src="../asset/image/FLAN.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Flan de chocolate blanco y negro</h5>
+                      <p class="card-text">Ingredientes: 200 gr. de chocolate blanco, 4 huevos, 1/2 litro de leche, 100 gr. de chocolate puro valor, 200 ml. de nata líquida de cocinar. Un poco de margarina o mantequilla. Para decorar Gotas de cobertura blancas, negras y de chocolate con leche..</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                      <h3>3000$</h3>
+                      <button class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card">
+                  <img src="../asset/image/bizcocho.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Bozcocho</h5>
+                      <p class="card-text">Ingredientes: 4 huevos, 1 yogur de limón, 3 vasos de yogur de harina, 2 de azúcar y 1 aceite de girasol y 1 sobre le levadura Royal.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                      <h3>2000$</h3>
+                      <button class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card">
+                  <img src="../asset/image/magdalenas.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Magdalenas</h5>
+                      <p class="card-text">Ingredientes: 3 huevos, 1 vaso de azúcar, 1 vaso de aceite de girasol, 2 vasos de harina, medio sobre de levadura, 1 zumo de 1 naranja.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                      <h3>3500$</h3>
+                      <button class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card">
+                  <img src="../asset/image/bombon-suizo-.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Bombon Zuiso</h5>
+                      <p class="card-text">200 g de chocolate negro de alta calidad (60% cacao o más),200 g de manteca (mantequilla),200 g de azúcar,4 huevos
+                        150 g de harina,1 cucharadita de polvo de hornear,1 pizca de sal</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                      <h3>5000$</h3>
+                      <button class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card">
+                  <img src="../asset/image/receta-de-bizcocho-de-zanahoria-800x640.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Bizcocho de zanahoria</h5>
+                      <p class="card-text">3 zanahorias.
+                        200 gr de azúcar mascabo.,200 gr de harina común.,80 gr de manteca.,2 huevos.,1 cucharadita de polvo de hornear.
+                        Opcional: frutos secos.,1 cucharadita de canela.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                      <h3>5500$</h3>
+                      <button class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
     <br>
     <br>
     <br>
